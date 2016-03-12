@@ -9,3 +9,4 @@ dragula([document.getElementById("elements"), document.getElementById("sandbox")
 dragula([document.getElementById('sandbox')], {
   removeOnSpill: true
 });
+

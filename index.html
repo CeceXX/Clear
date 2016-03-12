@@ -24,7 +24,7 @@
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="/StartHackDashboard/js/ie-emulation-modes-warning.js"></script>
-	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<link href="/StartHackDashboard/css/style.css" rel="stylesheet">
 	<!--Our CSS!!!!!--!>
 
@@ -56,10 +56,35 @@
 	        	    <div class="jumbotron">
   <h1>Calculators made easy.</h1>
   <p>Create powerful, intuite and effective calculators easily and quickly.</p>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">Create your first calculator</a></p>
+  <p><a id="hide" class="btn btn-primary btn-lg" href="#" role="button">Create your first calculator</a></p>
+
+
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $(".jumbotron").hide();
+    })
+});
+</script>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("hide").click(function(){
+        $(".jumbotron").fadeOut(2000);
+        
+    });
+});
+</script>
+
+
 </div>
           <h1 class="page-header">Create your own calculator</h1>
 <div id="sandbox" class="city">
+
   <h1>Mortgage Calculator<span class="label label-default"></span></h1>
   <h3>The easy and fast way to calculate the cost of your montage<span class="label label-default"></span></h3><br>
   <h4>With the mortgage calculator, you can easily and quickly calculate the monthly costs of your home<span class="label label-default"></span></h4>

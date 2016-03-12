@@ -7,12 +7,16 @@
    height: 420px;
    border: none;
 }   
-form{
+form {
 width:80%;
 margin-left:10px;
 padding-bottom:20px;
-
 }
+
 body {
 padding-top:0px;
+}
+
+li {
+	font-size: 190;
 }

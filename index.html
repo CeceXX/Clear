@@ -15,6 +15,7 @@
 
     <title>Dashboard Template for Bootstrap</title>
 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/dragula/3.6.8/dragula.min.js'></script>
     <!-- Bootstrap core CSS -->
     <link href="/StartHackDashboard/css/bootstrap.min.css" rel="stylesheet">
 
@@ -56,45 +57,18 @@
         <form>
             <input type="text" class="form-control" placeholder="Search...">
           </form>
-          <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Row <span class="sr-only">(current)</span></a></li>
-           
+          <ul id="elements" class="nav nav-sidebar">
+            <li><a href="#">Row</a></li>
             <li><a href="#">Label</a></li>
             <li><a href="#">Slider</a></li>
             <li><a href="#">Checkbox</a></li>
-			<li><a href="#">Radio</a></li>
-			<li><a href="#">Textfield</a></li>
+			      <li><a href="#">Radio</a></li>
+			      <li><a href="#">Textfield</a></li>
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">Dashboard</h1>
-<div class="city">
-
-
-<p>Drag the W3Schools image into the rectangle:</p>
-
-<style>
-#div1 {width:350px;height:70px;padding:10px;border:1px solid #aaaaaa;}
-</style>
-<script>
-function allowDrop(ev) {
-    ev.preventDefault();
-}
-
-function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-}
-
-function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-}
-</script>
-<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-<br>
-<div id="container-fluid" draggable="true" ondragstart="drag(event)">
-
+<div id="sandbox" class="city">
   <h2>London</h2>
   <p>London is the capital city of England.</p>
   <p>It is the most populous city in the United Kingdom,

@@ -13,12 +13,16 @@ dragula([document.getElementById('sandbox')], {
 // Hide thing
 
 var formBuilder = document.getElementById("formBuilder");
+var welcomeMessage = document.getElementById("jumbotron");
+var buttonWelcome = document.getElementById("buttonCreate");
 
 window.onload = function() {
 	formBuilder.style.visibility = "hidden";
+	welcomeMessage.style.visibility = "visible";
 }
 
-function showFormBuilder() {
+buttonWelcome.onclick = function() {
 	console.log("show!!");
 	formBuilder.style.visibility = "visible";
+	welcomeMessage.style.visibility = "hidden"
 }
